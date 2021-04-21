@@ -24,7 +24,7 @@ public class MovingPlatform : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         time += Time.deltaTime;
         if (this.transform.position.y >= startingPos.y + distance)
