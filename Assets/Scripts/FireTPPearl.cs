@@ -33,5 +33,7 @@ public class FireTPPearl : MonoBehaviour
     {
         GameObject nPearl = Instantiate(pearl, rightHand.position, Quaternion.identity);
         nPearl.GetComponent<Rigidbody>().AddForce(rightHand.transform.forward * force);
+        Destroy(nPearl, 15);
+
     }
 }

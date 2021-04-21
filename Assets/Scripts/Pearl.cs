@@ -24,12 +24,9 @@ public class Pearl : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Vector3 pos = new Vector3 (camera.transform.position.x, 0, camera.transform.position.z);
-
         TeleportRequest tr = new TeleportRequest();
         tr.destinationPosition = transform.position;
         tp.GetComponent<TeleportationProvider>().QueueTeleportRequest(tr);
-
 
         Destroy(gameObject);
     }
