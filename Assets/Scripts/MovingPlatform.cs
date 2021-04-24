@@ -5,10 +5,10 @@ using System;
 
 public class MovingPlatform : MonoBehaviour
 {
-    public float distance;
+    public float distance = 3;
 
     public float xmove = 0;
-    public float ymove = 0;
+    public float ymove = 0.1f;
     public float zmove = 0;
     public float movingTime;
     private float time = 0;
