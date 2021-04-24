@@ -7,6 +7,9 @@ TagManager:
   - SpellFX
   - CameraOffset
   - Locomotion
+  - FirePosition
+  - Bouncing
+  - Regular
   layers:
   - Default
   - TransparentFX

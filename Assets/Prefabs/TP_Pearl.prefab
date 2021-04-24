@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8181546049769056242}
   m_Layer: 0
   m_Name: TP_Pearl
-  m_TagString: Untagged
+  m_TagString: Regular
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,3 +125,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41662ffde769d9d4e82f288446b700be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TP_animation: {fileID: 190198, guid: 5511542e98d45d24baa0d5d49bd2f989, type: 3}
+  Fire_animation: {fileID: 112336, guid: f9c8c3f45622abf4eba7bc2cb906726b, type: 3}

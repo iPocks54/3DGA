@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4904624116741055562}
   m_Layer: 0
   m_Name: TP_BoucePearl
-  m_TagString: Untagged
+  m_TagString: Bouncing
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,4 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604dc81a2d2d02d4586e46879b749126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbBounce: 1
+  TP_animation: {fileID: 149100, guid: 6997b408ddf22534fae89ea094c87dcd, type: 3}
+  Fire_animation: {fileID: 124420, guid: 67b3c533babe1c248ac7522866353f93, type: 3}
+  nbBounce: 20
+  bounce_Animation: {fileID: 149100, guid: cbd22d4a21cc88c43a69975bebcc58a1, type: 3}

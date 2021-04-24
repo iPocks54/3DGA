@@ -3,14 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class BouncingPearl : MonoBehaviour
+public class BouncingPearl : Pearl
 {
-    GameObject tp;
     public int nbBounce = 1;
-    void Start()
-    {
-        tp = GameObject.FindGameObjectWithTag("Locomotion");
-    }
+    public GameObject bounce_Animation;
 
     void Update()
     {
@@ -20,17 +16,14 @@ public class BouncingPearl : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (nbBounce != 0)
+        {
             nbBounce -= 1;
+            bounce_Animation.transform.position = transform.position;
+            GameObject clone = bounce_Animation;
+            clone = Instantiate(clone);
+            Destroy(clone, 2);
+        }
         else
-            Teleport();
-    }
-
-    void Teleport()
-    {
-        TeleportRequest tr = new TeleportRequest();
-        tr.destinationPosition = transform.position;
-        tp.GetComponent<TeleportationProvider>().QueueTeleportRequest(tr);
-
-        Destroy(gameObject);
+            base.Teleport();
     }
 }
