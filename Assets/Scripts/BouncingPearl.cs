@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class Pearl : MonoBehaviour
+public class BouncingPearl : MonoBehaviour
 {
     GameObject tp;
+    public int nbBounce = 1;
     void Start()
     {
         tp = GameObject.FindGameObjectWithTag("Locomotion");
@@ -13,12 +14,15 @@ public class Pearl : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Teleport();
+        if (nbBounce != 0)
+            nbBounce -= 1;
+        else
+            Teleport();
     }
 
     void Teleport()

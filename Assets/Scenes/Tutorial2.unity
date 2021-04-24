@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightHand: {fileID: 28547126}
-  pearl: {fileID: 8181546049769056243, guid: 02919c7bba1c5c14ca596143ca7a6196, type: 3}
+  pearl: {fileID: 8181546049769056243, guid: 7fa13ceb1d44a0a4da3704db5a3d51cb, type: 3}
   force: 300
 --- !u!114 &28547128
 MonoBehaviour:
@@ -2596,6 +2596,7 @@ GameObject:
   - component: {fileID: 1773906586}
   - component: {fileID: 1773906585}
   - component: {fileID: 1773906590}
+  - component: {fileID: 1773906591}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Player
@@ -2672,7 +2673,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773906584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.384, y: 0, z: -6.642}
+  m_LocalPosition: {x: -8.384, y: 2.14, z: -6.642}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1638918193}
@@ -2691,7 +2692,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be8fb444d53a4cb41ac8509579053e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  respawnPos: {fileID: 1773906589}
+  refPos: {fileID: 1773906589}
+  offsetFall: -15
+--- !u!114 &1773906591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773906584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4909f24b79d60d34fb0c71036c272be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2062521208
 GameObject:
   m_ObjectHideFlags: 0
