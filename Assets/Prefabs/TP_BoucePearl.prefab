@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8181546049769056244}
   - component: {fileID: 8181546049769056245}
   - component: {fileID: 4904624116741055562}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TP_BoucePearl
   m_TagString: Bouncing
   m_Icon: {fileID: 0}

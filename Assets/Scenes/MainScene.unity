@@ -1825,7 +1825,7 @@ GameObject:
   - component: {fileID: 336626122}
   - component: {fileID: 336626121}
   - component: {fileID: 336626120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightHand Controller
   m_TagString: GameController
   m_Icon: {fileID: 0}
@@ -2920,7 +2920,7 @@ GameObject:
   - component: {fileID: 440177955}
   - component: {fileID: 440177957}
   - component: {fileID: 440177956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3194,7 +3194,7 @@ GameObject:
   - component: {fileID: 570734733}
   - component: {fileID: 570734730}
   - component: {fileID: 570734734}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4167,7 +4167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 727664328}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera Offset
   m_TagString: CameraOffset
   m_Icon: {fileID: 0}
@@ -5401,7 +5401,7 @@ GameObject:
   - component: {fileID: 1046598547}
   - component: {fileID: 1046598546}
   - component: {fileID: 1046598545}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: XR Rig
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5445,7 +5445,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.05, y: 1.1, z: 0.05}
+  m_Size: {x: 0.4, y: 1.1, z: 0.4}
   m_Center: {x: 0.001973495, y: 0.66, z: -0.02508527}
 --- !u!54 &1046598548
 Rigidbody:
@@ -5739,7 +5739,7 @@ GameObject:
   - component: {fileID: 1089603425}
   - component: {fileID: 1089603427}
   - component: {fileID: 1089603426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6355,7 +6355,7 @@ GameObject:
   - component: {fileID: 1215163099}
   - component: {fileID: 1215163098}
   - component: {fileID: 1215163097}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -6485,7 +6485,7 @@ GameObject:
   - component: {fileID: 1224041120}
   - component: {fileID: 1224041119}
   - component: {fileID: 1224041118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Simple Ball Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7738,7 +7738,7 @@ GameObject:
   - component: {fileID: 1426659868}
   - component: {fileID: 1426659870}
   - component: {fileID: 1426659869}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FireMode_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8124,7 +8124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1491670228}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: TransformGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8372,6 +8372,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1491670228}
     m_Modifications:
     - target: {fileID: 1582419099263788242, guid: ba9f07cabddbb0944a6034fdfc73cc05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1582419099263788242, guid: ba9f07cabddbb0944a6034fdfc73cc05, type: 3}
       propertyPath: m_TagString
       value: FirePosition
       objectReference: {fileID: 0}
@@ -8419,9 +8423,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4417071783623147392, guid: ba9f07cabddbb0944a6034fdfc73cc05, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4417413882934953742, guid: ba9f07cabddbb0944a6034fdfc73cc05, type: 3}
       propertyPath: m_Name
       value: Sci_Fi_Pistol_#1_prefab Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4417413882934953742, guid: ba9f07cabddbb0944a6034fdfc73cc05, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba9f07cabddbb0944a6034fdfc73cc05, type: 3}
@@ -8542,7 +8554,7 @@ GameObject:
   - component: {fileID: 1614572842}
   - component: {fileID: 1614572841}
   - component: {fileID: 1614572840}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bouncing Ball Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9986,7 +9998,7 @@ GameObject:
   - component: {fileID: 1981622990}
   - component: {fileID: 1981622995}
   - component: {fileID: 1981622996}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftHand Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
