@@ -28,4 +28,15 @@ public class Collectibles : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("Collectible"))
+        {
+            print("AH OUI CA JAIME BIEN LOOOOOOOOOOOOOO");
+            collectibleNbr++;
+            Destroy(other.gameObject);
+        }
+    }
 }
