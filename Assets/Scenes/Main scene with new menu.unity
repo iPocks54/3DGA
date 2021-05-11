@@ -2437,6 +2437,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425102012}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &446833262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7126724740608143109, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+  m_PrefabInstance: {fileID: 921366204808117593}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &449515927
 GameObject:
   m_ObjectHideFlags: 0
@@ -4630,6 +4641,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1015135238}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1016189384 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7126724739155935888, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+  m_PrefabInstance: {fileID: 921366204808117593}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1019152473
 GameObject:
   m_ObjectHideFlags: 0
@@ -9161,6 +9183,42 @@ PrefabInstance:
     - target: {fileID: 921366205850382030, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724739141252944, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_Name
+      value: Quart 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724739141252946, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: label
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724739155935903, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_Name
+      value: Button1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724739165782710, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: buttons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724739165782710, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1016189384}
+    - target: {fileID: 7126724739165782710, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 446833262}
+    - target: {fileID: 7126724739390768125, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_Name
+      value: Quart 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724739390768127, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: label
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724740608143107, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_Name
+      value: Button2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
