@@ -10,6 +10,7 @@ TagManager:
   - FirePosition
   - Bouncing
   - Regular
+  - Collectible
   layers:
   - Default
   - TransparentFX

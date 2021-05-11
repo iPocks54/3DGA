@@ -4820,7 +4820,7 @@ GameObject:
   - component: {fileID: 4904624116741055562}
   m_Layer: 6
   m_Name: TP_BoucePearl
-  m_TagString: Bouncing
+  m_TagString: Pearl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
