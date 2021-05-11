@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitLvl : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class ExitLvl : MonoBehaviour
         if (collision.collider.CompareTag("Pearl"))
         {
             Application.Quit();
-            print("THIS IS THE END");
+            print("END OF THE LEVEL");
         }
     }
 }
