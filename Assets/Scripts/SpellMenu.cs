@@ -12,6 +12,7 @@ public class SpellMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("MENU VA ETRE DISABLE");
         menu.enabled = false;
         controller = GetComponent<ActionBasedController>();
         controller.selectAction.action.performed += Action_performed;
@@ -19,6 +20,7 @@ public class SpellMenu : MonoBehaviour
 
     private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
+        Debug.Log("LE BOUTON A ETE APPUE LA BON SANG");
         menu.enabled = !menu.enabled;
     }
 
