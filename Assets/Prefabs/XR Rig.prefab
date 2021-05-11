@@ -472,6 +472,7 @@ MonoBehaviour:
   - {fileID: 8181546049769056243, guid: 02919c7bba1c5c14ca596143ca7a6196, type: 3}
   - {fileID: 8181546049769056243, guid: 7fa13ceb1d44a0a4da3704db5a3d51cb, type: 3}
   - {fileID: 8181546049769056243, guid: 9f59bb70dc9dcb24693fed771cc35aa2, type: 3}
+  - {fileID: 8181546049769056243, guid: 9f59bb70dc9dcb24693fed771cc35aa2, type: 3}
   force: 300
 --- !u!1 &921366205501832094
 GameObject:
@@ -1476,17 +1477,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 921366206789588884}
     m_Modifications:
-    - target: {fileID: 7939406109529228233, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7939406109529228234, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_Name
       value: Spell Menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7939406109529228234, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7939406109529228235, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_Pivot.x

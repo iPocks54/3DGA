@@ -46,11 +46,11 @@ public class SpellMenuUI : MonoBehaviour
              Debug.Log("Ball type set to << " + pearls[2].GetComponent<Pearl>().typeName + " >> ");
          });
 
-        /* buttons[3].onClick.AddListener(() =>
+         buttons[3].onClick.AddListener(() =>
          {
              PlayerPrefs.SetInt("Mode", 3);
              Debug.Log("Ball type set to << " + pearls[3].GetComponent<Pearl>().typeName + " >> ");
-         }); */
+         }); 
     }
 
     void InitText()
@@ -58,6 +58,7 @@ public class SpellMenuUI : MonoBehaviour
         buttons[0].GetComponentInChildren<Text>().text = pearls[0].GetComponent<Pearl>().typeName;
         buttons[1].GetComponentInChildren<Text>().text = pearls[1].GetComponent<Pearl>().typeName;
         buttons[2].GetComponentInChildren<Text>().text = pearls[2].GetComponent<Pearl>().typeName;
+        buttons[3].GetComponentInChildren<Text>().text = pearls[3].GetComponent<Pearl>().typeName;
 
     }
 }
