@@ -1861,7 +1861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rightHand: {fileID: 336626119}
   pearls:
-  - {fileID: 8181546049769056243, guid: 02919c7bba1c5c14ca596143ca7a6196, type: 3}
+  - {fileID: 8181546049769056243, guid: 9f59bb70dc9dcb24693fed771cc35aa2, type: 3}
   - {fileID: 8181546049769056243, guid: 7fa13ceb1d44a0a4da3704db5a3d51cb, type: 3}
   force: 300
 --- !u!114 &336626121
