@@ -6,8 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Pearl : MonoBehaviour
 {
     GameObject tp;
+    public string typeName;
     public GameObject TP_animation;
     public GameObject Fire_animation;
+    
     void Start()
     {
         tp = GameObject.FindGameObjectWithTag("Locomotion");

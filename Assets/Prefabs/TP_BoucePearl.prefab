@@ -4930,6 +4930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 604dc81a2d2d02d4586e46879b749126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typeName: Bouncing
   TP_animation: {fileID: 149100, guid: 6997b408ddf22534fae89ea094c87dcd, type: 3}
   Fire_animation: {fileID: 124420, guid: 67b3c533babe1c248ac7522866353f93, type: 3}
   nbBounce: 1
