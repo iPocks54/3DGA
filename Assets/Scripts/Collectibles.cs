@@ -11,12 +11,12 @@ public class Collectibles : MonoBehaviour
 
     void Start()
     {
-        timeText.text = "0 collectible";
+        //timeText.text = "0 collectible";
     }
 
     void Update()
     {
-        timeText.text = collectibleNbr + " collectibles";
+       // timeText.text = collectibleNbr + " collectibles";
     }
 
     private void OnCollisionEnter(Collision collision)
