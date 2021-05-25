@@ -645,6 +645,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 0}
+  collectibleNbr: 0
+  collectibleNeeded: 0
+  blackHole: {fileID: 0}
 --- !u!1 &921366206018934657
 GameObject:
   m_ObjectHideFlags: 0

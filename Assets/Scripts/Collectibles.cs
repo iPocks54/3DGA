@@ -7,15 +7,20 @@ using System;
 public class Collectibles : MonoBehaviour
 {
     public Text timeText;
-    private int collectibleNbr = 0;
+    public int collectibleNbr = 0;
+    public int collectibleNeeded = 0;
+    public GameObject blackHole;
 
     void Start()
     {
+        blackHole.SetActive(false);
         //timeText.text = "0 collectible";
     }
 
     void Update()
     {
+        if (blackHole.active == false && collectibleNbr >= collectibleNeeded)
+            blackHole.SetActive(true);
        // timeText.text = collectibleNbr + " collectibles";
     }
 
@@ -23,18 +28,17 @@ public class Collectibles : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Collectible"))
         {
-            print("AH OUI CA JAIME BIEN LO");
             collectibleNbr++;
             Destroy(collision.gameObject);
         }
     }
 
+    //ici que ça trigger
     private void OnTriggerEnter(Collider other)
     {
 
         if (other.gameObject.CompareTag("Collectible"))
         {
-            print("AH OUI CA JAIME BIEN LOOOOOOOOOOOOOO");
             collectibleNbr++;
             Destroy(other.gameObject);
         }
