@@ -6302,6 +6302,10 @@ PrefabInstance:
       propertyPath: blackHole
       value: 
       objectReference: {fileID: 1142059504}
+    - target: {fileID: 921366205144743056, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 921366205144743057, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: pearls.Array.data[3]
       value: 
