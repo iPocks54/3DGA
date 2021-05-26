@@ -4677,6 +4677,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1302914645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 921366205850382031, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+  m_PrefabInstance: {fileID: 1667651617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7448815bd5148434682b3d931066cd10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1305776469
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +6298,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5297322114036111391, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: blackHole
+      value: 
+      objectReference: {fileID: 1142059504}
+    - target: {fileID: 921366205144743057, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: pearls.Array.data[3]
+      value: 
+      objectReference: {fileID: 8181546049769056243, guid: 3d9828eed80200942b1731d9bb731506, type: 3}
     - target: {fileID: 921366205850382025, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_Name
       value: 'XR Rig '
@@ -7586,6 +7605,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6716535580464174717, guid: 68a42361c0bc6084a97a7f586bf50f3b, type: 3}
+      propertyPath: m_XRRig
+      value: 
+      objectReference: {fileID: 1302914645}
     - target: {fileID: 6716535580464174718, guid: 68a42361c0bc6084a97a7f586bf50f3b, type: 3}
       propertyPath: m_Name
       value: Locomotion System

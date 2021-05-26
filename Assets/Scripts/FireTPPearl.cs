@@ -10,6 +10,8 @@ public class FireTPPearl : MonoBehaviour
     public GameObject[] pearls;
     public float force = 200f;
     Vector3 firePos;
+
+    int test = 0;
     void Start()
     {
         controller = GetComponent<ActionBasedController>();
@@ -25,7 +27,10 @@ public class FireTPPearl : MonoBehaviour
 
     private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        Fire(pearls[PlayerPrefs.GetInt("Mode")]);
+        //if (test == 0)
+            Fire(pearls[PlayerPrefs.GetInt("Mode")]);
+
+        test++;
     }
 
     void Update()
@@ -47,5 +52,15 @@ public class FireTPPearl : MonoBehaviour
         shot = Instantiate(shot, firePos, Quaternion.identity);
         shot.transform.rotation = rightHand.transform.rotation;
         Destroy(shot, 2);
+    }
+
+    public void DisableFire()
+    {
+        controller.activateAction.action.performed -= Action_performed;
+    }
+
+    public void EnableFire()
+    {
+        controller.activateAction.action.performed += Action_performed;
     }
 }
