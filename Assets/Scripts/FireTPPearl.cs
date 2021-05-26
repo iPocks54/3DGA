@@ -9,14 +9,20 @@ public class FireTPPearl : MonoBehaviour
     public Transform rightHand;
     public GameObject[] pearls;
     public float force = 200f;
+    public GameObject jauge;
+    private float heating = 0;
     Vector3 firePos;
-
-    int test = 0;
+    Vector3 jaugePos;
+    CooldownTimer cd;
     void Start()
     {
         controller = GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += Action_performed;
         rightHand = GetComponent<Transform>();
+        jaugePos = jauge.GetComponent<Transform>().localPosition;
+        cd = new CooldownTimer(2);
+        cd.TimeRemaining = 0;
+
 
         foreach (GameObject o in pearls)
             o.GetComponent<Rigidbody>();
@@ -27,16 +33,16 @@ public class FireTPPearl : MonoBehaviour
 
     private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        //if (test == 0)
+        if (heating != 1)
             Fire(pearls[PlayerPrefs.GetInt("Mode")]);
-
-        test++;
     }
 
     void Update()
     {
-
-
+        jaugePos.z = 1 - heating;
+        jauge.GetComponent<Transform>().localPosition = jaugePos;
+        cd.Update(Time.deltaTime);
+        HeatingManager();
     }
 
     void Fire(GameObject pearl)
@@ -52,6 +58,11 @@ public class FireTPPearl : MonoBehaviour
         shot = Instantiate(shot, firePos, Quaternion.identity);
         shot.transform.rotation = rightHand.transform.rotation;
         Destroy(shot, 2);
+
+        heating += 0.4f;
+        if (heating > 1)
+            heating = 1;
+        cd.Start();
     }
 
     public void DisableFire()
@@ -62,5 +73,16 @@ public class FireTPPearl : MonoBehaviour
     public void EnableFire()
     {
         controller.activateAction.action.performed += Action_performed;
+    }
+
+    private void HeatingManager()
+    {
+        if (!cd.IsActive && heating > 0)
+        {
+            heating -= 0.2f * Time.deltaTime;
+        }
+
+        if (heating < 0)
+            heating = 0;
     }
 }

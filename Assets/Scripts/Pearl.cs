@@ -10,7 +10,7 @@ public class Pearl : MonoBehaviour
     public GameObject TP_animation;
     public GameObject Fire_animation;
     
-    void Start()
+    protected void Start()
     {
         tp = GameObject.FindGameObjectWithTag("Locomotion");
 

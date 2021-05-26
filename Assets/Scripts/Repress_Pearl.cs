@@ -11,8 +11,8 @@ public class Repress_Pearl : Pearl
     {
         controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += Action_performed;
-        tp = GameObject.FindGameObjectWithTag("Locomotion");
         controller.GetComponent<FireTPPearl>().DisableFire();
+        base.Start();
     }
 
     void Update()
