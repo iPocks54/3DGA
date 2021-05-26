@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.1
+      scalar: 0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.9056604, g: 0.8491502, b: 0.5938057, a: 0.7647059}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1305,7 +1305,7 @@ ParticleSystem:
         serializedVersion: 2
         key0: {r: 0.3207547, g: 0.29170638, b: 0.19215022, a: 0.80784315}
         key1: {r: 0.8679245, g: 0.6255338, b: 0.20060521, a: 0.68256056}
-        key2: {r: 0.98902076, g: 0.8924439, b: 0.990566, a: 0.22352941}
+        key2: {r: 1, g: 0.87176263, b: 0, a: 0.22352941}
         key3: {r: 0.98902076, g: 0.8924439, b: 0.990566, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -4758,7 +4758,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5594da0788e7a834f92edb094b286d6f, type: 2}
+  - {fileID: 2100000, guid: 55e3417e34d166e48b1842d8e7459e53, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4931,5 +4931,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeName: Repress
-  TP_animation: {fileID: 190198, guid: 5511542e98d45d24baa0d5d49bd2f989, type: 3}
-  Fire_animation: {fileID: 112336, guid: f9c8c3f45622abf4eba7bc2cb906726b, type: 3}
+  TP_animation: {fileID: 100218, guid: 70697f61f31323645a44ba030d3d2882, type: 3}
+  Fire_animation: {fileID: 5161750554754205258, guid: 87c4590707f00d04699f06023e13792a, type: 3}
