@@ -1945,24 +1945,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &422634614 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7126724739165782704, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
-  m_PrefabInstance: {fileID: 1667651617}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &422634621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422634614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0579e639368575149a03c5b6ece9441f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xrRig: {fileID: 2060574973}
 --- !u!1 &425102012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4700,7 +4682,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 921366205850382031, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
   m_PrefabInstance: {fileID: 1667651617}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2060574973}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7448815bd5148434682b3d931066cd10, type: 3}
@@ -6376,10 +6358,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7126724738493188733, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
-      propertyPath: useLazySelection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7126724739165782707, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -7078,11 +7056,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2060574973 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 921366205850382025, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
-  m_PrefabInstance: {fileID: 1667651617}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2083744369
 GameObject:
   m_ObjectHideFlags: 0

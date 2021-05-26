@@ -1473,6 +1473,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menu: {fileID: 7126724739165782708}
+--- !u!114 &3835094632634102874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7126724739165782704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0579e639368575149a03c5b6ece9441f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xrRig: {fileID: 921366205850382025}
 --- !u!1001 &921366205317071226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1480,6 +1493,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 921366206789588884}
     m_Modifications:
+    - target: {fileID: 7939406109127297799, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
+      propertyPath: useLazySelection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7939406109529228233, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -1578,6 +1595,11 @@ PrefabInstance:
       objectReference: {fileID: 921366206018934658}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
+--- !u!1 &7126724739165782704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7939406109529228234, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
+  m_PrefabInstance: {fileID: 921366205317071226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7126724739165782705 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7939406109529228235, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
