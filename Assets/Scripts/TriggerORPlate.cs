@@ -7,18 +7,28 @@ public class TriggerORPlate : MonoBehaviour
     public GameObject wallOne;
     public GameObject wallTwo;
     public float moveSize;
-    private bool isPressed = false;
+    public bool timer = false;
+    private bool isTrigger = false;
+    public float openTimer = 5f;
+    private float time = 0f;
 
-    // Start is called before the first frame update
-    void Start()
+    void Update()
     {
+        if (timer && isTrigger)
+            time += Time.deltaTime;
+        if (timer && time >= openTimer)
+        {
+            leavePlatform();
+            time = 0;
+        }
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void leavePlatform()
     {
-        
+        isTrigger = false;
+        wallTwo.transform.Translate(Vector3.up * moveSize);
+        wallOne.transform.Translate(Vector3.down * moveSize);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,7 +36,7 @@ public class TriggerORPlate : MonoBehaviour
 
         if (other.gameObject.CompareTag("Player"))
         {
-            isPressed = true;
+            isTrigger = true;
             wallOne.transform.Translate(Vector3.up * moveSize);
             wallTwo.transform.Translate(Vector3.down * moveSize);
         }
@@ -35,11 +45,7 @@ public class TriggerORPlate : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Player"))
-        {
-            isPressed = false;
-            wallTwo.transform.Translate(Vector3.up * moveSize);
-            wallOne.transform.Translate(Vector3.down * moveSize);
-        }
+        if (other.gameObject.CompareTag("Player") && !timer)
+            leavePlatform();
     }
 }
