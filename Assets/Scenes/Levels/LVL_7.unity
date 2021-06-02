@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -231,7 +231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -956,7 +956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!199 &342362812
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5711,7 +5711,7 @@ Transform:
   m_LocalScale: {x: 52, y: 33, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404178202
 GameObject:
@@ -6055,7 +6055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11449,7 +11449,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &841744289
 AudioSource:
@@ -11847,7 +11847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 942639253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.42, y: -11.744348, z: -43.48}
+  m_LocalPosition: {x: 7.5, y: -11.744348, z: -43.48}
   m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16974,7 +16974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268107993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.34, y: -11.744348, z: -47.1}
+  m_LocalPosition: {x: 7.34, y: -11.744348, z: -49.6}
   m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17189,7 +17189,7 @@ Transform:
   m_LocalScale: {x: 2, y: 0.1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1278616667
 AudioSource:
@@ -18280,7 +18280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4310970724085748, guid: faef3979cb833bd418b09d6b70c540d0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18841,7 +18841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102615252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.8, y: 3.69, z: -13.38}
+  m_LocalPosition: {x: 14.8, y: 3.69, z: -14.06}
   m_LocalScale: {x: 1, y: 12, z: 14}
   m_Children: []
   m_Father: {fileID: 483154661}
@@ -19011,6 +19011,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5297322114036111391, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: collectibleNeeded
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 921366205850382025, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_Name
       value: XR Rig
