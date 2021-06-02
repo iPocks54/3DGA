@@ -38,12 +38,12 @@ public class SpellMenu : MonoBehaviour
                 OpenMenu();
                 if (menu.activeInHierarchy && axis.y < 0.5)
                     buttons[0].onClick.Invoke();
-                else if (menu.activeInHierarchy && axis.y >= 0.5)
-                    buttons[2].onClick.Invoke();
                 else if (menu.activeInHierarchy && axis.x < 0.5)
                     buttons[1].onClick.Invoke();
+                else if (menu.activeInHierarchy && axis.y >= 0.5)
+                    buttons[2].onClick.Invoke();
                 else if (menu.activeInHierarchy && axis.x >= 0.5)
-                    buttons[4].onClick.Invoke();
+                    buttons[3].onClick.Invoke();
             }
             
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxisClick, out axisClick) && axisClick) {
