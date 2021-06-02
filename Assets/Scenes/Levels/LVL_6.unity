@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07045771, g: 0.35355106, b: 0.97003937, a: 1}
+  m_IndirectSpecularColor: {r: 0.070591815, g: 0.35379228, b: 0.9707773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6603,7 +6603,7 @@ GameObject:
   - component: {fileID: 397414695}
   m_Layer: 0
   m_Name: FX_Blackhole
-  m_TagString: Untagged
+  m_TagString: BlackHole
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

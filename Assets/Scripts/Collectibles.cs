@@ -21,6 +21,7 @@ public class Collectibles : MonoBehaviour
 
     void Update()
     {
+        print("nbr : " + collectibleNbr);
         if (blackHole && blackHole.active == false && collectibleNbr >= collectibleNeeded)
             blackHole.SetActive(true);
        // timeText.text = collectibleNbr + " collectibles";
