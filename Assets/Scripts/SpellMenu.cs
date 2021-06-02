@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.InputSystem;
 
@@ -9,25 +10,36 @@ using UnityEngine.InputSystem;
 public class SpellMenu : MonoBehaviour
 {
     private ActionBasedController controller;
+    public List<Button> buttons;
     public GameObject menu;
+    private List<UnityEngine.XR.InputDevice> leftHandedControllers;
     private float closeTimer;
     private float currentTime;
-
+        Vector2 axis;
+        bool axisClick;
+        bool axisTouch;
 
     // Start is called before the first frame update
     void Start()
     {
+
+        leftHandedControllers = new List<UnityEngine.XR.InputDevice>();
+        controller = GetComponent<ActionBasedController>();
+        UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.LeftHand, leftHandedControllers);
+        menu.SetActive(false);
+        controller.selectAction.action.performed += Action_performed;
+    }
+
+    private void Update() {
         Vector2 axis;
         bool axisClick;
         bool axisTouch;
         
-        var leftHandedControllers = new List<UnityEngine.XR.InputDevice>();
-        controller = GetComponent<ActionBasedController>();
-        UnityEngine.XR.InputDevices.GetDevicesAtXRNode(UnityEngine.XR.XRNode.LeftHand, leftHandedControllers);
         foreach (var device in leftHandedControllers)
         {
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 || axis.y != 0)) {
                 OpenMenu();
+                //if (menu.activeInHierarchy && axis.x < 1) 
             }
             
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxisClick, out axisClick) && axisClick) {
@@ -39,14 +51,6 @@ public class SpellMenu : MonoBehaviour
                 OpenMenu();
             }
         }
-        menu.SetActive(false);
-        //controller = GetComponent<ActionBasedController>();
-        //controller.rotateAnchorAction.action.performed += MenuAction_performed;
-        //controller.translateAnchorAction.action.performed += MenuAction_performed;
-        controller.selectAction.action.performed += Action_performed;
-    }
-
-    private void Update() {
         if (closeTimer > 0)
         {
             if (Time.timeSinceLevelLoad - currentTime >= closeTimer)
