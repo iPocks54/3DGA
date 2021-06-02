@@ -15,9 +15,6 @@ public class SpellMenu : MonoBehaviour
     private List<UnityEngine.XR.InputDevice> leftHandedControllers;
     private float closeTimer;
     private float currentTime;
-        Vector2 axis;
-        bool axisClick;
-        bool axisTouch;
 
     // Start is called before the first frame update
     void Start()
