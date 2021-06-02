@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class ExitLvl : MonoBehaviour
 {
     public int collectibleNbr;
+    public int sceneNbr = 0;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.CompareTag("Pearl"))
         {
-            Application.Quit();
+            SceneManager.LoadScene(sceneNbr);
+            //Application.Quit();
             print("END OF THE LEVEL");
         }
     }
