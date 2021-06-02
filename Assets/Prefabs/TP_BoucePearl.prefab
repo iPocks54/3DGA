@@ -4933,5 +4933,6 @@ MonoBehaviour:
   typeName: Bouncing
   TP_animation: {fileID: 149100, guid: 6997b408ddf22534fae89ea094c87dcd, type: 3}
   Fire_animation: {fileID: 124420, guid: 67b3c533babe1c248ac7522866353f93, type: 3}
+  heatValue: 0.3
   nbBounce: 1
   bounce_Animation: {fileID: 149100, guid: cbd22d4a21cc88c43a69975bebcc58a1, type: 3}

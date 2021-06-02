@@ -9,7 +9,8 @@ public class Pearl : MonoBehaviour
     public string typeName;
     public GameObject TP_animation;
     public GameObject Fire_animation;
-    
+    [Range(0, 1)]
+    public float heatValue = 0.2f;
     protected void Start()
     {
         tp = GameObject.FindGameObjectWithTag("Locomotion");

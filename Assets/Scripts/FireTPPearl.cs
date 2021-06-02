@@ -59,7 +59,8 @@ public class FireTPPearl : MonoBehaviour
         shot.transform.rotation = rightHand.transform.rotation;
         Destroy(shot, 2);
 
-        heating += 0.4f;
+        heating += nPearl.GetComponent<Pearl>().heatValue;
+
         if (heating > 1)
             heating = 1;
         cd.Start();
