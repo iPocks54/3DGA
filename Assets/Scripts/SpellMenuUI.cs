@@ -22,7 +22,6 @@ public class SpellMenuUI : MonoBehaviour
 
     void Update()
     {
-        
     }
 
     void Initbuttons()
@@ -55,10 +54,10 @@ public class SpellMenuUI : MonoBehaviour
 
     void InitText()
     {
-        buttons[0].GetComponentInChildren<Text>().text = pearls[0].GetComponent<Pearl>().typeName;
-        buttons[1].GetComponentInChildren<Text>().text = pearls[1].GetComponent<Pearl>().typeName;
-        buttons[2].GetComponentInChildren<Text>().text = pearls[2].GetComponent<Pearl>().typeName;
-        buttons[3].GetComponentInChildren<Text>().text = pearls[3].GetComponent<Pearl>().typeName;
+        buttons[0].GetComponentInChildren<TextMesh>().text = pearls[0].GetComponent<Pearl>().typeName;
+        buttons[1].GetComponentInChildren<TextMesh>().text = pearls[1].GetComponent<Pearl>().typeName;
+        buttons[2].GetComponentInChildren<TextMesh>().text = pearls[2].GetComponent<Pearl>().typeName;
+        buttons[3].GetComponentInChildren<TextMesh>().text = pearls[3].GetComponent<Pearl>().typeName;
 
     }
 }

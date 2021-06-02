@@ -16,6 +16,9 @@ public class RotateUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(transform.position + cam.transform.rotation * Vector3.forward, cam.transform.rotation * Vector3.up);
+        //this.transform.rotate = cam.transform.rotate;
+        //this.transform.rotate = xrRig.transform.rotate;
+        //transform.LookAt(transform.position + cam.transform.rotation * Vector3.forward, cam.transform.rotation * Vector3.up);
+        transform.LookAt(transform.position + xrRig.transform.rotation * Vector3.forward, xrRig.transform.rotation * Vector3.up);
     }
 }
