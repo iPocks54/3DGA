@@ -7,17 +7,20 @@ public class DoubleTrigerPlate : MonoBehaviour
     public GameObject triggerObject;
     public GameObject triggerObject2;
     private bool isTrigger = false;
+    private AudioSource sound;
 
     private void Start()
     {
         triggerObject.SetActive(false);
+        sound = this.GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !isTrigger)
         {
+            sound.Play();
             isTrigger = true;
             triggerObject.SetActive(true);
             triggerObject2.SetActive(false);

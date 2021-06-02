@@ -11,6 +11,12 @@ public class TriggerORPlate : MonoBehaviour
     private bool isTrigger = false;
     public float openTimer = 5f;
     private float time = 0f;
+    public AudioSource sound;
+
+    private void Start()
+    {
+        sound = this.GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -18,6 +24,7 @@ public class TriggerORPlate : MonoBehaviour
             time += Time.deltaTime;
         if (timer && time >= openTimer)
         {
+            sound.Play();
             leavePlatform();
             time = 0;
         }
@@ -34,8 +41,9 @@ public class TriggerORPlate : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !isTrigger)
         {
+            sound.Play();
             isTrigger = true;
             wallOne.transform.Translate(Vector3.up * moveSize);
             wallTwo.transform.Translate(Vector3.down * moveSize);

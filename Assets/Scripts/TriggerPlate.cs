@@ -8,10 +8,11 @@ public class TriggerPlate : MonoBehaviour
     public float triggerTimer;
     private float timer = 0;
     private bool isTrigger = false;
+    private AudioSource sound;
 
     private void Start()
     {
-        
+        sound = this.GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -20,7 +21,9 @@ public class TriggerPlate : MonoBehaviour
             timer += Time.deltaTime;
         if (timer >= triggerTimer)
         {
+            sound.Play();
             triggerObject.SetActive(true);
+            isTrigger = false;
             timer = 0;
         }
     }
@@ -29,9 +32,10 @@ public class TriggerPlate : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && !isTrigger)
         {
             isTrigger = true;
+            sound.Play();
             triggerObject.SetActive(false);
         }
     }
