@@ -13,26 +13,7 @@ public class SpellMenu : MonoBehaviour
     public GameObject menu;
     private float closeTimer;
     private float currentTime;
-    InputActionProperty m_LeftHandMoveAction;
 
-    public InputActionProperty leftHandMoveAction
-        {
-            get => m_LeftHandMoveAction;
-            set => SetInputActionProperty(ref m_LeftHandMoveAction, value);
-        }
-
-
-
-        void SetInputActionProperty(ref InputActionProperty property, InputActionProperty value)
-        {
-            if (Application.isPlaying)
-                property.DisableDirectAction();
-
-            property = value;
-
-            if (Application.isPlaying && isActiveAndEnabled)
-                property.EnableDirectAction();
-        }
 
     // Start is called before the first frame update
     void Start()
@@ -45,10 +26,6 @@ public class SpellMenu : MonoBehaviour
     }
 
     private void Update() {
-        var leftHandValue = m_LeftHandMoveAction.action?.ReadValue<Vector2>() ?? Vector2.zero;
-        Debug.Log(leftHandValue);
-        if (leftHandValue.x != 0 || leftHandValue.y != 0)
-            OpenMenu();
         if (closeTimer > 0)
         {
             if (Time.timeSinceLevelLoad - currentTime >= closeTimer)

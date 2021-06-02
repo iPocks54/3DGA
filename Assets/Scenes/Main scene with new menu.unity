@@ -6358,6 +6358,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1862624126299618501, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049679022919519690, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7126724738576105964, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7126724739165782707, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 1
@@ -6374,6 +6386,10 @@ PrefabInstance:
       propertyPath: buttons.Array.data[3]
       value: 
       objectReference: {fileID: 190957463}
+    - target: {fileID: 7126724739345213108, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
 --- !u!1 &1677991356
