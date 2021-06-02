@@ -4933,3 +4933,4 @@ MonoBehaviour:
   typeName: Regular
   TP_animation: {fileID: 190198, guid: 5511542e98d45d24baa0d5d49bd2f989, type: 3}
   Fire_animation: {fileID: 112336, guid: f9c8c3f45622abf4eba7bc2cb906726b, type: 3}
+  heatValue: 0.2

@@ -11,6 +11,8 @@ TagManager:
   - Bouncing
   - Regular
   - Collectible
+  - Pearl
+  - BlackHole
   layers:
   - Default
   - TransparentFX

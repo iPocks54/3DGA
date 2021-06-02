@@ -5,14 +5,16 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Pearl : MonoBehaviour
 {
-    GameObject tp;
+    protected GameObject tp;
     public string typeName;
     public GameObject TP_animation;
     public GameObject Fire_animation;
-    
-    void Start()
+    [Range(0, 1)]
+    public float heatValue = 0.2f;
+    protected void Start()
     {
         tp = GameObject.FindGameObjectWithTag("Locomotion");
+
     }
 
     private void Awake()

@@ -4934,6 +4934,7 @@ MonoBehaviour:
   typeName: Slow motion
   TP_animation: {fileID: 190198, guid: 5fdd8332e3546cf47b5e4dde70a7616a, type: 3}
   Fire_animation: {fileID: 112336, guid: 8198fc7e9c325064ba578bce42e4e846, type: 3}
+  heatValue: 0.4
 --- !u!114 &-5341624446011913080
 MonoBehaviour:
   m_ObjectHideFlags: 0

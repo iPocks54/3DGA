@@ -11,6 +11,8 @@ public class Repress_Pearl : Pearl
     {
         controller = GameObject.FindGameObjectWithTag("GameController").GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += Action_performed;
+        controller.GetComponent<FireTPPearl>().DisableFire();
+        base.Start();
     }
 
     void Update()
@@ -30,6 +32,8 @@ public class Repress_Pearl : Pearl
 
     void Repress()
     {
+        controller.activateAction.action.performed -= Action_performed;
+        controller.GetComponent<FireTPPearl>().EnableFire();
         base.Teleport();
     }
 }
