@@ -3375,6 +3375,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!82 &826670721 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2821202706101950969, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+  m_PrefabInstance: {fileID: 1667651617}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &852168307
 GameObject:
   m_ObjectHideFlags: 0
@@ -6611,6 +6616,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 921366205144743057, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: overHeatSound
+      value: 
+      objectReference: {fileID: 826670721}
+    - target: {fileID: 921366205144743057, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: pearls.Array.data[3]
       value: 
       objectReference: {fileID: 8181546049769056243, guid: 3d9828eed80200942b1731d9bb731506, type: 3}
@@ -6713,6 +6722,14 @@ PrefabInstance:
     - target: {fileID: 2459961678200559273, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2821202706101950969, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2911859416224945968, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5823668099740442751, guid: 4b8e39648ba74694da81b5f2e7648aae, type: 3}
       propertyPath: m_LocalPosition.y

@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 8104023713958630094}
   - component: {fileID: -5547264573874224933}
   - component: {fileID: 4097039476003572338}
+  - component: {fileID: 7408561527096074050}
   m_Layer: 0
   m_Name: SM_Icon_Lightning
   m_TagString: Collectible
@@ -205,3 +206,17 @@ MonoBehaviour:
   degreesPerSecond: 30
   amplitude: 0.2
   frequency: 1
+--- !u!114 &7408561527096074050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8081257878274092832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1172b52f50a24374ba3379c894669c4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollectSound: {fileID: 3155253566240175109, guid: 62919397d9db4784ba9cb3fc760c4b78, type: 3}
+  CollectParticles: {fileID: 4905758031804750671, guid: 12e5e1fc054651c4090b60f1df323acb, type: 3}

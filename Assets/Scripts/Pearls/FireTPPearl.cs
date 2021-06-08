@@ -14,15 +14,25 @@ public class FireTPPearl : MonoBehaviour
     Vector3 firePos;
     Vector3 jaugePos;
     CooldownTimer cd;
+
+    public AudioSource fireSound;
+    public AudioSource errorSound;
+    public AudioSource overHeatSound;
+
+    public ParticleSystem overHeatParticles;
     void Start()
     {
         controller = GetComponent<ActionBasedController>();
         controller.activateAction.action.performed += Action_performed;
         rightHand = GetComponent<Transform>();
         jaugePos = jauge.GetComponent<Transform>().localPosition;
+        fireSound = fireSound.GetComponent<AudioSource>();
+        errorSound = errorSound. GetComponent<AudioSource>();
+        overHeatSound = overHeatSound.GetComponent<AudioSource>();
+        overHeatParticles = overHeatParticles.GetComponent<ParticleSystem>();
+            
         cd = new CooldownTimer(2);
         cd.TimeRemaining = 0;
-
 
         foreach (GameObject o in pearls)
             o.GetComponent<Rigidbody>();
@@ -33,8 +43,10 @@ public class FireTPPearl : MonoBehaviour
 
     private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
-        if (heating != 1)
+        if (heating != 0.99f)
             Fire(pearls[PlayerPrefs.GetInt("Mode")]);
+        else if (heating >= 0.99f)
+            errorSound.Play();
     }
 
     void Update()
@@ -43,16 +55,19 @@ public class FireTPPearl : MonoBehaviour
         jauge.GetComponent<Transform>().localPosition = jaugePos;
         cd.Update(Time.deltaTime);
         HeatingManager();
+        print(overHeatParticles.isPlaying);
+
     }
 
     void Fire(GameObject pearl)
     {
+        fireSound.Play();
+
         firePos = GameObject.FindGameObjectWithTag("FirePosition").transform.position;
 
         GameObject nPearl = Instantiate(pearl, firePos, Quaternion.identity);
         nPearl.GetComponent<Rigidbody>().AddForce(rightHand.transform.forward * force);
         Destroy(nPearl, 15);
-
 
         GameObject shot = nPearl.GetComponent<Pearl>().Fire_animation;
         shot = Instantiate(shot, firePos, Quaternion.identity);
@@ -61,8 +76,11 @@ public class FireTPPearl : MonoBehaviour
 
         heating += nPearl.GetComponent<Pearl>().heatValue;
 
-        if (heating > 1)
-            heating = 1;
+        if (heating >= 1)
+        {
+            heating = 0.99f;
+            overHeatSound.Play();
+        }
         cd.Start();
     }
 
@@ -85,5 +103,10 @@ public class FireTPPearl : MonoBehaviour
 
         if (heating < 0)
             heating = 0;
+
+        if (heating >= 0.99f && !overHeatParticles.isPlaying)
+            overHeatParticles.Play();
+        else if (heating < 0.99f && overHeatParticles.isPlaying)
+            overHeatParticles.Stop();
     }
 }
