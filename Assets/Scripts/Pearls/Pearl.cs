@@ -40,11 +40,11 @@ public class Pearl : MonoBehaviour
         tr.destinationPosition = transform.position;
         tp.GetComponent<TeleportationProvider>().QueueTeleportRequest(tr);
         Destroy(gameObject);
+        PlayTPSoundEffect();
     }
 
     private void OnDestroy()
     {
-        PlayTPSoundEffect();
         TP_animation.transform.position = transform.position;
         GameObject clone = TP_animation;
         clone = Instantiate(clone) as GameObject;

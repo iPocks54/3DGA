@@ -17305,6 +17305,10 @@ PrefabInstance:
       value: 10.4645605
       objectReference: {fileID: 0}
     - target: {fileID: 4958828829714868, guid: 20cbddd4768d3b84e96c9d4651750cd1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958828829714868, guid: 20cbddd4768d3b84e96c9d4651750cd1, type: 3}
       propertyPath: m_LocalScale.z
       value: 11.864664
       objectReference: {fileID: 0}
