@@ -36,14 +36,19 @@ public class SpellMenu : MonoBehaviour
         {
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 || axis.y != 0)) {
                 OpenMenu();
-                if (menu.activeInHierarchy && axis.y < 0.5)
+                if (menu.activeInHierarchy && axis.y < 0.5) {
                     buttons[0].onClick.Invoke();
+                }
                 else if (menu.activeInHierarchy && axis.x < 0.5)
+                {
                     buttons[1].onClick.Invoke();
-                else if (menu.activeInHierarchy && axis.y >= 0.5)
+                }
+                else if (menu.activeInHierarchy && axis.y >= 0.5) {
                     buttons[2].onClick.Invoke();
-                else if (menu.activeInHierarchy && axis.x >= 0.5)
+                }
+                else if (menu.activeInHierarchy && axis.x >= 0.5) {
                     buttons[3].onClick.Invoke();
+                }
             }
             
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxisClick, out axisClick) && axisClick) {
