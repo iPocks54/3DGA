@@ -6,7 +6,7 @@ using System;
 
 public class Collectibles : MonoBehaviour
 {
-    public Text timeText;
+    //public Text timeText;
     public int collectibleNeeded = 0;
     private int collectibleNbr = 0;
     private GameObject blackHole;
