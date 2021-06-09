@@ -72,13 +72,13 @@ public class SpellMenu : MonoBehaviour
     {
         Debug.Log("Touchpad pressed");
         menu.SetActive(true);
-        closeTimer = 2f;
+        closeTimer = 3f;
         currentTime = Time.timeSinceLevelLoad;
     }
     private void MenuAction_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         menu.SetActive(true);
-        closeTimer = 2f;
+        closeTimer = 3f;
         currentTime = Time.timeSinceLevelLoad;
     }
     private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
