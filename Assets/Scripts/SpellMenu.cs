@@ -34,19 +34,19 @@ public class SpellMenu : MonoBehaviour
         
         foreach (var device in leftHandedControllers)
         {
-            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 || axis.y != 0)) {
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 && axis.y != 0)) {
                 OpenMenu();
-                if (menu.activeInHierarchy && axis.y < 0.5) {
+                if (menu.activeInHierarchy && axis.y <= -0.2f) {
                     buttons[0].onClick.Invoke();
                 }
-                else if (menu.activeInHierarchy && axis.x < 0.5)
+                else if (menu.activeInHierarchy && axis.x <= -0.2f)
                 {
                     buttons[1].onClick.Invoke();
                 }
-                else if (menu.activeInHierarchy && axis.y >= 0.5) {
+                else if (menu.activeInHierarchy && axis.y >= 0.2f) {
                     buttons[2].onClick.Invoke();
                 }
-                else if (menu.activeInHierarchy && axis.x >= 0.5) {
+                else if (menu.activeInHierarchy && axis.x >= 0.2f) {
                     buttons[3].onClick.Invoke();
                 }
             }
