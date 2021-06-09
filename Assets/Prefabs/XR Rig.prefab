@@ -968,7 +968,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e264e550a53d3c5459dc99f0a6270c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeText: {fileID: 0}
   collectibleNeeded: 0
 --- !u!1 &921366206018934657
 GameObject:
@@ -2499,11 +2498,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 524499435036254153, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -19.00002
+      value: -29.00002
       objectReference: {fileID: 0}
     - target: {fileID: 524499435036254153, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -37.299976
+      value: -35.909985
       objectReference: {fileID: 0}
     - target: {fileID: 524499435036254153, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2511,11 +2510,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 524499435036254153, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -57.500008
+      value: -52.500008
       objectReference: {fileID: 0}
     - target: {fileID: 524499435036254153, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 2.4499817
+      value: 10.294992
       objectReference: {fileID: 0}
     - target: {fileID: 1030016771564481182, guid: e6940d7324dc08148843e8a155452ff0, type: 3}
       propertyPath: m_LocalPosition.z
