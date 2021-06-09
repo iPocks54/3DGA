@@ -34,7 +34,7 @@ public class SpellMenu : MonoBehaviour
         
         foreach (var device in leftHandedControllers)
         {
-            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 || axis.y != 0)) {
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 && axis.y != 0)) {
                 OpenMenu();
                 if (menu.activeInHierarchy && axis.y <= -0.2f) {
                     buttons[0].onClick.Invoke();
