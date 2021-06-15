@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: b9fd2287f93b3da45ac31e8185c0b9c9, type: 2}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 6aeef2bc535899240bec158acccbed14, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1811,7 +1811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2386707652488359163, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
       propertyPath: sceneNbr
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
@@ -2746,6 +2746,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4490266632543506, guid: 42eeb2cb84e945f48bfbf7e4a450d54b, type: 3}
   m_PrefabInstance: {fileID: 1137080453}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1497480383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7580678601871575225, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_Name
+      value: Musique 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.689466
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.639896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.653932
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7580678601871575367, guid: a994c518454b15245bb0ab48a975482f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a994c518454b15245bb0ab48a975482f, type: 3}
 --- !u!1001 &1580382867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3162,7 +3219,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
