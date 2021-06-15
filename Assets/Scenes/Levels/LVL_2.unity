@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b9fd2287f93b3da45ac31e8185c0b9c9, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1808,6 +1808,10 @@ PrefabInstance:
     - target: {fileID: 240813545909648633, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
       propertyPath: m_Name
       value: FX_Blackhole (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2386707652488359163, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
+      propertyPath: sceneNbr
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}

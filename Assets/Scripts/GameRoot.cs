@@ -2,6 +2,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class GameRoot : MonoBehaviour
 {
@@ -39,12 +41,18 @@ public class GameRoot : MonoBehaviour
 
     public void StartGame()
     {
-        Debug.Log("Start Game!!!");
+        //Debug.Log("Start Game!!!");
+        SceneManager.LoadScene(1);
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quit Game!!!");
+        // Debug.Log("Quit Game!!!");
+#if UNITY_EDITOR    //在编辑器模式下
+        EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 
     public void StartTimer()
@@ -63,4 +71,8 @@ public class GameRoot : MonoBehaviour
         timerText.text = Convert.ToInt32(timer).ToString();
     }
 
+    public void LoadLevel(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
 }
