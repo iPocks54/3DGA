@@ -13,7 +13,7 @@ public class ExitLvl : MonoBehaviour
         {
             SceneManager.LoadScene(sceneNbr);
             //Application.Quit();
-            print("END OF THE LEVEL");
+           // print("END OF THE LEVEL");
         }
     }
 }
