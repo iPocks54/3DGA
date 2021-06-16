@@ -34,21 +34,16 @@ public class SpellMenu : MonoBehaviour
         
         foreach (var device in leftHandedControllers)
         {
-            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 && axis.y != 0)) {
+            if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxis, out axis) && (axis.x != 0 || axis.y != 0)) {
                 OpenMenu();
-                if (menu.activeInHierarchy && axis.y <= -0.2f) {
+                if (menu.activeInHierarchy && axis.y < 0.5)
                     buttons[0].onClick.Invoke();
-                }
-                else if (menu.activeInHierarchy && axis.x <= -0.2f)
-                {
+                else if (menu.activeInHierarchy && axis.x < 0.5)
                     buttons[1].onClick.Invoke();
-                }
-                else if (menu.activeInHierarchy && axis.y >= 0.2f) {
+                else if (menu.activeInHierarchy && axis.y >= 0.5)
                     buttons[2].onClick.Invoke();
-                }
-                else if (menu.activeInHierarchy && axis.x >= 0.2f) {
+                else if (menu.activeInHierarchy && axis.x >= 0.5)
                     buttons[3].onClick.Invoke();
-                }
             }
             
             if (device.TryGetFeatureValue(UnityEngine.XR.CommonUsages.primary2DAxisClick, out axisClick) && axisClick) {
@@ -72,13 +67,13 @@ public class SpellMenu : MonoBehaviour
     {
         Debug.Log("Touchpad pressed");
         menu.SetActive(true);
-        closeTimer = 3f;
+        closeTimer = 2f;
         currentTime = Time.timeSinceLevelLoad;
     }
     private void MenuAction_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
     {
         menu.SetActive(true);
-        closeTimer = 3f;
+        closeTimer = 2f;
         currentTime = Time.timeSinceLevelLoad;
     }
     private void Action_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
