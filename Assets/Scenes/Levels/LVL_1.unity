@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b7c71ebe38ea3ea4fb2660758fdf8483, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2066,11 +2066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490266632543506, guid: 42eeb2cb84e945f48bfbf7e4a450d54b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.32
+      value: 0.7670001
       objectReference: {fileID: 0}
     - target: {fileID: 4490266632543506, guid: 42eeb2cb84e945f48bfbf7e4a450d54b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 39.41
+      value: 34.402
       objectReference: {fileID: 0}
     - target: {fileID: 4490266632543506, guid: 42eeb2cb84e945f48bfbf7e4a450d54b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2196,11 +2196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 235069787546548909, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.393
+      value: 1.84
       objectReference: {fileID: 0}
     - target: {fileID: 235069787546548909, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 39.548
+      value: 34.54
       objectReference: {fileID: 0}
     - target: {fileID: 235069787546548909, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2233,6 +2233,10 @@ PrefabInstance:
     - target: {fileID: 240813545909648633, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
       propertyPath: m_Name
       value: FX_Blackhole
+      objectReference: {fileID: 0}
+    - target: {fileID: 2386707652488359163, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
+      propertyPath: sceneNbr
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0a36a6e83c695b45bbc8c9cf4d93fbe, type: 3}
